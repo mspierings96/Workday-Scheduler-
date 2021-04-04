@@ -8,7 +8,17 @@ var hour=moment().hour()
 console.log(hour)
 
 
+
 for (var i = 8; i < 18; i++) {
+
+
+if( i < hour ){
+    textArea.style.backgroundColor = "#present"
+      } else if( i === hour ){
+        textArea.style.backgroundColor = "#future"\
+      } else {
+        textArea.style.backgroundColor = "#past"
+      }
 
 
 var row = $('<div>')
