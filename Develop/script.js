@@ -8,18 +8,7 @@ var hour=moment().hour()
 console.log(hour)
 
 
-
 for (var i = 8; i < 18; i++) {
-
-
-if( i < hour ){
-    textArea.style.backgroundColor = "#present"
-      } else if( i === hour ){
-        textArea.style.backgroundColor = "#future"\
-      } else {
-        textArea.style.backgroundColor = "#past"
-      }
-
 
 var row = $('<div>')
 var time = $('<span>')
@@ -27,7 +16,16 @@ var textArea = $('<textarea>')
 var savebutton = $('<button>')
 
 
-    savebutton.addClass('save-btn')
+    if( i < hour ){
+        textArea.addClass("future");
+      } else if( i === hour ){
+        textArea.addClass("past");
+      } else {
+        textArea.addClass("present");
+      }
+    
+
+    savebutton.addClass('saveBtn')
     savebutton.text('Save')
 
     var timeText = ""
@@ -48,7 +46,9 @@ var savebutton = $('<button>')
         if(localStorage.getItem(i)) {
             textArea.text(localStorage.getItem(i))
         }
-    }
+     
+
+}
 
     time.text(timeText)
 
