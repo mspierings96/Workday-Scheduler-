@@ -7,7 +7,7 @@ This website serves as an interactive calendar that allows the user to enter the
 
 Screenshot of Website:
 
-<img src="https://github.com/mspierings96/Workday-Scheduler-/blob/main/Images/Siteshot.png" width:"350">
+<img src="https://github.com/mspierings96/Workday-Scheduler-/blob/main/Images/Siteshot.png" width="300">
 
 Built With
 HTML
